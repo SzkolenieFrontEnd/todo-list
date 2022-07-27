@@ -1,0 +1,74 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
+}
+
+.taskCard {
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px 0.5px rgba(135, 135, 135, 0.559);
+    background-color: #fff;
+    padding: 12px;
+}
+
+
+/* TOGGLE ADD NOTE PANEL ---------------------------------- */
+.showPanelBtn {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 30px;
+    background-color: rgb(1, 178, 178);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    line-height: 50px;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    box-shadow: 0px 5px 8px 0.5px rgba(171, 171, 171, 0.658);
+    transition: 0.4s;
+}
+
+.showPanelBtn:hover {
+    background-color: rgb(1, 220, 220);
+}
+
+.addNotePanel {
+    position: fixed;
+    right: 0;
+    top: 71%;
+    transform: translateY(-50%) translateX(100%);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: #fff;
+    gap:12px;
+    transition: 0.4s;
+}
+
+.addNotePanel > input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.addNotePanel > button {
+    background-color: rgb(1, 178, 178);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+
+
+.showNoteForm {
+    transform: translateY(-50%) translateX(0);   
+}
